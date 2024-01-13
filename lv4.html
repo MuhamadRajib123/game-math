@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3</title>
+    <style>
+        .item {
+            background-image: url('./assets/ikan.png');
+            width: 5rem;
+            height: 7rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            cursor: grab;
+        }
+
+        .soal {
+            font-size: 2rem;
+        }
+
+        #basket {
+            display: grid;
+            grid-template-columns: repeat(5, 4rem);
+            grid-template-rows: repeat(2, 4rem);
+            place-items: center;
+            justify-content: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 25rem;
+            height: 10rem;
+            padding: 20px;
+            background-image: url('./assets/keranjang.png');
+        }
+
+        .box-soal {
+            margin-left: 5vw;
+            margin-top: 10rem;
+            padding: 2px 5rem 2px 5rem;
+            background-color: red;
+            border: 2px solid black;
+            height: max-content;
+            width: max-content;
+            border-radius: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        #basket {
+            margin-top: 5rem;
+            margin-left: 15rem;
+        }
+
+        #items-container {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 40px);
+            display: grid;
+            width: 20rem;
+            margin-left: 35rem;
+            margin-top: 9rem;
+            gap: 10px;
+            margin-right: 5rem;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 20px 50px 20px 50px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            bottom: 2rem;
+            right: 20rem;
+        }
+
+        .top {
+            display: flex;
+            margin-top: 20rem;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('./assets/bglv4.png'); flex-direction: column;">
+    <div class="top">
+        <div id="basket"></div>
+
+        <div class="box-soal">
+            <h3 class="soal"></h3>
+        </div>
+    </div>
+
+    <div id="items-container">
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item" id="item3"></div>
+        <div class="item" id="item4"></div>
+        <div class="item" id="item5"></div>
+        <div class="item" id="item6"></div>
+        <div class="item" id="item7"></div>
+        <div class="item" id="item8"></div>
+        <div class="item" id="item9"></div>
+        <div class="item" id="item10"></div>
+        <div class="item" id="item11"></div>
+        <div class="item" id="item12"></div>
+    </div>
+    <button onclick="check('lv4.html')" class="button">Next</a>
+
+        <script src="logic.js"></script>
+</body>
+
+</html>

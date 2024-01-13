@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50vw;
+            margin-bottom: 15rem;
+        }
+      
+        .text{
+            color: #D4EDF1;
+            text-shadow: 0 0 5px #000000;
+            text-decoration: none;
+        }
+        .mulai{
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 20px 50px 20px 50px; 
+            border-radius: 50px; 
+            background-color: rgba(255,255,255, 0.5);
+        }
+        .navigasi{
+            width: 7rem; 
+        }
+    </style>
+</head>
+
+<body style="background-image: url('./assets/home-bg.png');">
+    <div class="top">
+        <input href="name.html" class="mulai text" id="name" placeholder="Nama :"></input>
+        <img src="./assets/navigasi.png" alt="" class="navigasi">
+    </div>
+    <button onclick="addName()" class="mulai text">tap to play</button>
+</body>
+
+</html>
+<script src="logic.js"></script>

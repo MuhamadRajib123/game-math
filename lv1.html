@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 1</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .item{
+      background-image: url('./assets/item.png');
+    }
+    #basket{
+      background-image: url('./assets/keranjang.png');
+    }
+    #items-container{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .kanan{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body style="background-image: url('./assets/background.png');">
+
+    <div id="items-container">
+      <div class="item" id="item1"></div>
+      <div class="item" id="item2"></div>
+      <div class="item" id="item3"></div>
+      <div class="item" id="item4"></div>
+      <div class="item" id="item5"></div>
+      <div class="item" id="item6"></div>
+      <div class="item" id="item7"></div>
+      <div class="item" id="item8"></div>
+      <div class="item" id="item9"></div>
+      <div class="item" id="item10"></div>
+      <div class="item" id="item11"></div>
+      <div class="item" id="item12"></div>
+    </div>
+
+
+    <div class="kanan">
+      <div class="box-soal">
+        <h3 class="soal"></h3>
+      </div>
+      <div id="basket">
+      </div>
+    </div>
+    <button onclick="check('lv2.html')" class="button">Next</a>
+    
+    <script src="logic.js"></script>
+</body>
+</html>
